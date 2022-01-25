@@ -170,7 +170,7 @@
                     sock.write(arr[2][0] + ' Win!!!');
                 });
                 state = 3
-example
+##### example
 ![](https://i.ibb.co/Jdw0zXJ/Screenshot-2022-01-25-112259.jpg)
 
 ##### Draw ก็ต่อเมื่อใน turn ที่ 9 ยังไม่มีผู้ชนะ
@@ -180,7 +180,7 @@ example
                     sock.write('Draw!!!');
                 });
                 state = 3
-example
+##### example
 ![](https://i.ibb.co/HH0JQLY/Screenshot-2022-01-25-112816.jpg)
 
 ###FlowChart
