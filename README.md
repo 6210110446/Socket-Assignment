@@ -1,9 +1,9 @@
 # Socket-Assignment
 311-PSU
-## member
-6210110446 *Kornchanok iednusorn*
-6210110045 *Jirateep jankhaew*
-6210110062 *Chonthicha kamwan*
+### member
+###### 6210110446 *Kornchanok iednusorn*
+###### 6210110045 *Jirateep jankhaew*
+###### 6210110062 *Chonthicha kamwan*
 # Tic-Tac-Toe features
 --------------
 - Tic-Tac-Toe server สำหรับ 2 client sides as players
