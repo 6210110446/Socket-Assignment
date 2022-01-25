@@ -185,6 +185,8 @@
 
 ### FlowChart
 
+![](https://i.ibb.co/fvhJ36C/Screenshot-2022-01-25-115320.jpg)
+
 ```flow
 st=>start: IDLE 
 op=>operation: Waiting for player
