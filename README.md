@@ -183,7 +183,7 @@
 ##### example
 ![](https://i.ibb.co/HH0JQLY/Screenshot-2022-01-25-112816.jpg)
 
-###FlowChart
+### FlowChart
 
 ```flow
 st=>start: IDLE 
@@ -202,7 +202,7 @@ cond2(no)->op2
 
 ```
 
-###Sequence Diagram
+### Sequence Diagram
 ![](https://i.ibb.co/wJLdtKt/Screenshot-2022-01-25-113004.jpg)
 
 ###End
