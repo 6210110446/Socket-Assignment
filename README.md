@@ -7,7 +7,7 @@
 - แสดงบอร์ดในการเล่น
 
 ## การเข้าสู่ Server
-####server.js
+#### server.js
 
             const net = require('net');
             const port = 5000;
@@ -17,26 +17,26 @@
 				console.log('HOST : ' + host + '\n' + 'PORT : ' + port);
 			});
 
-####client.js
+#### client.js
 
     var net = require('net');
     var HOST = 'localhost';
     var PORT = 5000;
     var client = new net.Socket();
 
-####แสดงผล
+#### แสดงผล
 
     HOST : localhost
     PORT : 5000
      Clinet: 127.0.0.1 : 60431 Connected!
      Clinet: 127.0.0.1 : 60434 Connected!
 
-######Client จะ join server และสร้าง socket ในตัวอย่างคือ localhost:60431 และ localhost:60434
+###### Client จะ join server และสร้าง socket ในตัวอย่างคือ localhost:60431 และ localhost:60434
 
 
-##การเลือกฝั่งผู้เล่น
+## การเลือกฝั่งผู้เล่น
 
-####server.js
+#### server.js
 
     socket.on('data', (data) => {
         console.log('Client: ' + clientAddress + '\n' + 'Input : ' + data);
@@ -65,20 +65,20 @@
             }
             else socket.write('INVALID: Enter "ptwo"')
             break;
-#####Client side input pone
+##### Client side input pone
     Game Status: Player 1! Connected
     Wait for another player!
-#####Another client side input ptwo
+##### Another client side input ptwo
     Game Status: Player 2! Connected
     Game Status: Game Start!
-#####Server side
+##### Server side
     Client: 127.0.0.1 : 60431
     Input : pone
     state=1
     Client: 127.0.0.1 : 60434
     Input : ptwo
     state=2
-#####Client side input ptwo without pone in the room
+##### Client side input ptwo without pone in the room
 
     Game Status: INVALID : Enter "pone"
 
@@ -93,19 +93,19 @@
                   arr[i][j] = "O";
                   count++;
                 }
-######เนื่องจากเป็นการผลัดการเล่นเป็น turn-based จึงสามารถกำหนดให้ผู้เล่นที่เล่น turn แรก (0,2,4,6,8) เป็น X และผู้เล่นอีกคนเป็น O (1,3,5,7)
+###### เนื่องจากเป็นการผลัดการเล่นเป็น turn-based จึงสามารถกำหนดให้ผู้เล่นที่เล่น turn แรก (0,2,4,6,8) เป็น X และผู้เล่นอีกคนเป็น O (1,3,5,7)
 
 
-##Game Board
-####Create game board on server.js
-#####Create array 3x3
+## Game Board
+#### Create game board on server.js
+##### Create array 3x3
 
     const arr = [
                     [" "," "," "],
                     [" "," "," "],
                     [" "," "," "]
                 ]
-#####Design game board
+##### Design game board
 
               let i = parseInt(String(data).charAt(0));
               let j = parseInt(String(data).charAt(1));
@@ -205,4 +205,4 @@ cond2(no)->op2
 ### Sequence Diagram
 ![](https://i.ibb.co/wJLdtKt/Screenshot-2022-01-25-113004.jpg)
 
-###End
+### End
